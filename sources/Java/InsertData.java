@@ -1,10 +1,4 @@
 import java.sql.*;
-import java.util.List;
-import java.util.Random;
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.text.SimpleDateFormat;
-import javax.xml.transform.Result;
 
 public class InsertData {
 
@@ -49,7 +43,7 @@ public class InsertData {
                     // id, name, zip, street
                     pizStmt.setString(1, data.getPizzeria()[i]);
                     pizStmt.setString(2, data.getZIP()[i]);
-                    pizStmt.setString(3, data.getPizzStreet()[i]);
+                    pizStmt.setString(3, data.getPizzaStreet()[i]);
                     pizStmt.addBatch();
                 }
                 pizStmt.executeBatch();

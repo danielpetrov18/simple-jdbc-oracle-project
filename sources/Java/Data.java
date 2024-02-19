@@ -1,19 +1,12 @@
 import java.sql.Date;
-import java.util.List;
 import java.util.Random;
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.text.SimpleDateFormat;
-import javax.xml.transform.Result;
 
 public class Data {
 
-    // fields
-    private static Random rnd = new Random();
-    private String username = "a12028482";
-    private String pass = "1337_7331_2000";
-
-    private String database = "jdbc:oracle:thin:@oracle19.cs.univie.ac.at:1521:orclcdb";
+    private final static Random rnd = new Random();
+    private final String username = "admin";
+    private final String pass = "password";
+    private final String database = "Set up a DB server!";
 
     private String[] pizzeria = new String[] {
             "Pizzeria Riva Favorita", "Pizza Randale", "Pizzeria Madonna", "Pizza Bros", "Momo",
@@ -68,7 +61,7 @@ public class Data {
     public String getPass() { return this.pass; }
     public String getDatabase() { return this.database; }
     public String[] getPizzeria() { return this.pizzeria; }
-    public String[] getPizzStreet() { return this.piz_street; }
+    public String[] getPizzaStreet() { return this.piz_street; }
     public String[] getZIP() { return this.ZIP; }
     public String[] getPizzaName() { return this.pizzaName; }
     public double[] getPizzaPrice() { return this.pizzaPrice; }

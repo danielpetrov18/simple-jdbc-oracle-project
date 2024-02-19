@@ -1,9 +1,9 @@
 <?php
 class DatabaseHelper
 {
-    const username = "a12028482";
-    const password = "1337_7331_2000"; 
-    const con_string = "//oracle19.cs.univie.ac.at:1521/orclcdb";
+    const username = "admin";
+    const password = "password";
+    const con_string = "Set up DB server!";
     protected $conn; 
 
     public function __construct()
